@@ -1,0 +1,150 @@
+//hide show
+@-webkit-keyframes hide {
+  0%{
+    -webkit-transform: scale(1,1);
+    opacity: 1;
+  }
+  100%{
+    -webkit-transform: scale(0,0);
+    opacity: 0;
+  }
+}
+*[data-role=animate-hide]{
+  -webkit-animation: hide 1s ease forwards;
+  -webkit-transform-origin:left top;
+}
+@-webkit-keyframes show {
+  100%{
+    -webkit-transform: scale(1,1);
+    opacity: 1;
+  }
+  0%{
+    -webkit-transform: scale(0,0);
+    opacity: 0;
+  }
+}
+*[data-role=animate-show]{
+  -webkit-animation: show 1s ease forwards;
+  -webkit-transform-origin:left top;
+}
+
+//fidein fideout
+@-webkit-keyframes fidein {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+*[data-role=animate-fidein]{
+  -webkit-animation: fidein 1s ease forwards;
+}
+@-webkit-keyframes findeout {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+*[data-role=animate-fideout]{
+  -webkit-animation: fideout 1s ease forwards;
+}
+//slideup slidedown
+@-webkit-keyframes slideup {
+  0%{
+    -webkit-transform: scale(1,0);
+  }
+  100%{
+    -webkit-transform: scale(0,1);
+  }
+}
+*[data-role=animate-slideup]{
+  -webkit-animation: slideup 1s ease forwards;
+  -webkit-transform-origin:top;
+}
+@-webkit-keyframes slidedown {
+  0%{
+    -webkit-transform: scale(1,1);
+  }
+  100%{
+    -webkit-transform: scale(0,0);
+  }
+}
+*[data-role=animate-slidedown]{
+  -webkit-animation: slidedown 1s ease forwards;
+  -webkit-transform-origin:top;
+}
+
+//圆周运动
+@r:30;
+@a:0;
+@p:10;
+@num:360/@p;
+.round(@i:0)when(@i<=@num){
+  @select:100/@num*@i*1%;
+  @a:@i*@p;
+  @{select}{
+    -webkit-transform: translate(cos(@a*pi()/180)*@r*1px,sin(@a*pi()/180)*@r*1px);
+  }
+  .round(@i+1);
+}
+@-webkit-keyframes round {
+  .round();
+}
+*[data-a=animate-round]{
+  -webkit-animation: round 1s linear infinite;
+}
+
+// 波浪线
+@r:30;
+@a:0;
+@a1:0;
+@p:4;
+@p1:30;
+@num:360/@p;
+.bolang(@i:0)when(@i<=@num){
+  @select:100/@num*@i*1%;
+  @a:@i*@p;
+  @a1:@i*@p1;
+  @{select}{
+    -webkit-transform: translate(
+              cos(@a*pi()/180)*@r*1px,
+              sin(@a1*pi()/180)*@p1*1px);
+  }
+  .bolang(@i+1);
+}
+@-webkit-keyframes bolang {
+  .bolang();
+}
+*[data-a=animate-bolang]{
+  -webkit-animation: bolang 5s linear infinite;
+}
+
+
+//圆
+
+@-webkit-keyframes yuan {
+  0%{transform:rotate(0deg)}
+  50%{transform:rotate(180deg)}
+  100%{transform:rotate(360deg)}
+}
+*[data-a=animate-yuan]{
+  -webkit-animation: yuan 2s linear infinite;
+}
+
+
+//画圆
+@num:10;
+@r:10;
+@d:50;
+.drawCircle(@i:1) when (@i<=@num){
+  .circle@{i}{
+    width: @r*2px;
+    height: @r*2px;
+    transform:transition(cos(360/@r*@i*PI()/180)*@d*1px,sin(360/@r*@i*PI()/180)*@d*1px);
+  }
+  .drawCircle(@i+1);
+}
+.drawCircle();

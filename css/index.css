@@ -1,0 +1,614 @@
+* {
+  box-sizing: border-box;
+}
+.main ul,li,h1,h2,h3,h4,h5,h6{
+  margin: 0;padding: 0;
+  list-style: none;
+}
+.content ul,li,h1,h2,h3,h4,h5,h6{
+  margin: 0;padding: 0;
+  list-style: none;
+}
+.body{
+  min-width: 400px;
+}
+.container-fluid{
+  min-width:400px!important;
+}
+.main{
+  background:url("../images/lift_bg_2.jpg") no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding: 0!important;
+  position: relative;
+}
+.logo{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 290px;
+  height: 160px;
+  background: url(../images/ico.png) 0 -200px no-repeat;
+  z-index: 1;
+}
+.small-thumb{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 18px;
+  height: 18px;
+}
+.thumb1{
+  background: url(../images/ico-8.png) 0 -650px no-repeat;
+}
+.thumb2{
+  background: url(../images/ico-8.png) 0 -600px no-repeat;
+}
+.thumb3{
+  background: url(../images/ico-8.png) 0 -750px no-repeat;
+}
+.thumb4{
+  background: url(../images/ico-8.png) 0 -700px no-repeat;
+}
+
+/*第二部分*/
+.content{
+  width: 100%;
+  /*border:1px solid red;*/
+  position: relative;
+  /*background:url("../images/1_120602095729_1.jpg") no-repeat;*/
+  background:url("../images/achivements-bg.jpg") no-repeat;
+  background-size: cover;
+  display: none;
+}
+.close{
+  width: 100px;
+  height: 100px;
+  background: url(../images/close.png) center center no-repeat #5c5c5c;;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.row{
+  height: 10%;
+  margin: 0!important;
+  padding: 0;
+}
+.row ul[class*="col"]{
+  margin: 0;
+  height: 80%;
+}
+.my-experience ul li{
+  width: 70%;
+  margin: 10px auto;
+}
+
+/*第四部分*/
+.show-works{
+  height:70%;
+}
+.show-row{
+  height: 100%;
+  position: relative;
+}
+
+@media screen and (max-width: 700px) {
+    .body_all{
+      width: 70px;
+      height: 70px;
+      border-radius: 10px;
+      position: absolute;
+      background-color: rgb(255,0,4);
+      transition: all 2s ease;
+      z-index: 100;
+      cursor: pointer;
+    }
+  .title{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    color: #FFF;
+    font-size: 10px;
+  }
+    .thumb{
+      display: none;
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      font-size: 30px;
+      line-height: 100%;
+    }
+  .content h1{
+    margin: 0;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    color:#000;
+    font-size: 40px;
+  }
+  .content h3{
+    margin: 0;
+    position: absolute;
+    left: 65%;
+    text-align: right;
+    top: 34px;
+    color:#09FB3C;
+  }
+  .content .img{
+    width: 30%;
+    height: 400px;
+    margin: auto 20px;
+    float: left;
+
+  }
+  .content .img .myphoto{
+    width:150px;
+    height: 150px;
+    margin: 20px auto;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    background: url("../images/me.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .content .img h2{
+    color:#333;
+    text-align: center;
+  }
+  .content ul{
+    margin-left: 45%;
+    color:#000;
+  }
+  .content ul h2{
+    font-size: 30px;
+  }
+  .content ul li{
+    font-size: 20px;
+    margin: 8px;
+  }
+  .my-experience ul li{
+    width: 70%;
+    margin: 10px auto;
+  }
+  .work-exp{
+    display: none;
+  }
+  .shangyiye,.xiayiye{
+    font-size: 20px;
+    position: absolute;
+    top:50px;
+    color:#555;
+    cursor: pointer;
+  }
+  .shangyiye{
+    left:25%;
+  }
+  .xiayiye{
+    left: 70%;
+  }
+  .about-me li{
+    font-size: 20px;
+  }
+  .my-works .xiala{
+    font-size: 40px;
+    color:#333;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 60px;
+  }
+  .my-works .xiala .xiala-title{
+    font-size: 20px;
+    margin: 5px;
+    margin-bottom: 10px;
+    color:#555;
+    border-radius: 5px;
+    display: none;
+  }
+  .my-works .show-row{
+    width: 70%!important;
+    margin-left: 30%!important;
+    height: 80%;
+  }
+  .show-row .works-1{
+    height: 100%;
+    position: absolute;
+    display: none;
+  }
+  .show-row .show_up{
+    position: absolute;
+    top:70%;
+    left:-10%;
+    font-size: 30px;
+    display:block ;
+    cursor: pointer;
+  }
+  .show-row .show_down{
+    position: absolute;
+    top:70%;
+    right:5%;
+    font-size: 30px;
+    display:block ;
+    cursor: pointer;
+  }
+  .works-1 ul{
+    width: 90%;
+    height: 130%;
+    margin: 0;
+  }
+  .works-1 ul li{
+    width: 60%;
+    height: 45%;
+    margin: 0px auto;
+    margin-top: 25px;
+    display: none;
+
+  }
+  .works-1 ul li:nth-child(1){
+    display: block;
+  }
+  .works-1 ul li:nth-child(2){
+    display: block;
+  }
+  .works-1 li .pitcure{
+    width: 100%;
+    height: 100%;
+  }
+  .works-1 li:hover{
+    transform: scale(1.1,1.1);
+    transition: all 1s ease;
+  }
+  .ps-1 li:nth-child(1) .pitcure{
+    background: url("../images/p1.png") no-repeat center;
+    background-size: cover;
+  }
+  .ps-1 li:nth-child(2) .pitcure{
+    background: url("../images/p2.png") no-repeat center;
+    background-size: cover;
+  }
+  .ps-1 li:nth-child(3) .pitcure{
+    background: url("../images/p3.png") no-repeat center;
+    background-size: cover;
+    /*background-position: left -17px;*/
+  }
+  .ps-1 li:nth-child(4) .pitcure{
+    background: url("../images/p4.png") no-repeat center;
+    background-size: cover;
+  }
+  .ps-1 li:nth-child(5) .pitcure{
+    background: url("../images/p5.png") no-repeat center;
+    background-size: cover;
+  }
+  .ps-1 li:nth-child(6) .pitcure{
+    background: url("../images/p6.png") no-repeat center;
+    background-size: cover;
+  }
+
+  .wangye-1 li:nth-child(1) .pitcure{
+    background: url("../images/w1.png") no-repeat center;
+    background-size: cover;
+  }
+  .wangye-1 li:nth-child(2) .pitcure{
+    background: url("../images/w2.png") no-repeat center;
+    background-size: cover;
+  }
+  .wangye-1 li:nth-child(3) .pitcure{
+    background: url("../images/w3.png") no-repeat center;
+    background-size: cover;
+    /*background-position: left -17px;*/
+  }
+  .wangye-1 li:nth-child(4) .pitcure{
+    background: url("../images/w4.png") no-repeat center;
+    background-size: cover;
+  }
+  .wangye-1 li:nth-child(5) .pitcure{
+    background: url("../images/w5.png") no-repeat center;
+    background-size: cover;
+  }
+  .wangye-1 li:nth-child(6) .pitcure{
+    background: url("../images/w6.png") no-repeat center;
+    background-size: cover;
+  }
+  .zhengzhan-1 li:nth-child(1) .pitcure{
+    background: url("../images/z1.png") no-repeat center;
+    background-size: cover;
+  }
+  .zhengzhan-1 li:nth-child(2) .pitcure{
+    background: url("../images/z2.png") no-repeat center;
+    background-size: cover;
+  }
+  .zhengzhan-1 li:nth-child(3) .pitcure{
+    background: url("../images/z3.png") no-repeat center;
+    background-size: cover;
+    /*background-position: left -17px;*/
+  }
+  .zhengzhan-1 li:nth-child(4) .pitcure{
+    background: url("../images/z4.png") no-repeat center;
+    background-size: cover;
+  }
+  .zhengzhan-1 li:nth-child(5) .pitcure{
+    background: url("../images/z5.png") no-repeat center;
+    background-size: cover;
+  }
+  .zhengzhan-1 li:nth-child(6) .pitcure{
+    background: url("../images/z6.png") no-repeat center;
+    background-size: cover;
+  }
+  .youxi-1 li:nth-child(1) .pitcure{
+    background: url("../images/y1.png") no-repeat center;
+    background-size: cover;
+  }
+  .youxi-1 li:nth-child(2) .pitcure{
+    background: url("../images/y2.png") no-repeat center;
+    background-size: cover;
+  }
+  .youxi-1 li:nth-child(3) .pitcure{
+    background: url("../images/y3.png") no-repeat center;
+    background-size: cover;
+    /*background-position: left -17px;*/
+  }
+  .youxi-1 li:nth-child(4) .pitcure{
+    background: url("../images/y4.png") no-repeat center;
+    background-size: cover;
+  }
+  .youxi-1 li:nth-child(5) .pitcure{
+    background: url("../images/y5.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .youxi-1 li:nth-child(6) .pitcure{
+    background: url("../images/y6.png") no-repeat center;
+    background-size: cover;
+  }
+
+
+  .ask-me .row{
+    height: 60%;
+  }
+  .ask-me .row div[class*="col"]{
+    height: 50%;
+    text-align: center;
+    font-size: 30px;
+    color:#333;
+    margin-top: 100px;
+  }
+  .ask-me .row span{
+    font-size: 20px;
+  }
+
+
+
+}
+@media screen and (min-width: 700px) {
+  .main{
+    min-width: 600px;
+  }
+  .thumb{
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 45px;
+    line-height: 100%;
+  }
+  .title{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    color: #FFF;
+    font-size: 16px;
+  }
+  .body_all{
+    width:100px;
+    height: 100px;
+    border-radius: 5px;
+    position: absolute;
+    transition: all 2s ease;
+    z-index: 100;
+    cursor: pointer;
+  }
+  .content h1{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    color:#000;
+    font-size: 50px;
+  }
+  .content h3{
+    margin: 0;
+    position: absolute;
+    left: 60%;
+    text-align: right;
+    top: 40px;
+    color:#09FB3C;
+  }
+  .content .img{
+    width: 30%;
+    height: 400px;
+    margin: auto 20px;
+    float: left;
+
+  }
+  .content .img .myphoto{
+    width:200px;
+    height: 200px;
+    margin: 20px auto;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    background: url("../images/me.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .content .img h2{
+    color:#333;
+    text-align: center;
+  }
+  .content ul{
+    margin-left: 45%;
+    color:#000;
+  }
+  .content ul h2{
+    font-size: 40px;
+  }
+  .content ul li{
+    font-size: 20px;
+  }
+  .shangyiye,.xiayiye{
+    display: none;
+  }
+  .about-me li{
+    font-size: 20px;
+  }
+  .my-works div[class*="col"]{
+    /*border:1px solid #06E675;*/
+    /*height: 50px;*/
+    margin-top: 20px;
+    font-size: 30px;
+    line-height: 50px;
+    color:#000;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .ask-me .row{
+    height: 60%;
+  }
+  .ask-me .row div[class*="col"]{
+    height: 100%;
+    text-align: center;
+    font-size: 50px;
+    color:#333;
+    margin-top: 150px;
+  }
+  .ask-me .row span{
+    font-size: 20px;
+  }
+  .show-row .works-1{
+    height: 90%;
+    position: absolute;
+    display: none;
+  }
+  .show_up,.show_down{
+    display: none;
+  }
+  .works-1 ul{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .works-1 li{
+    width: 27%;
+    height: 40%;
+    margin:2% 3%;
+    float: left;
+    /*background: #000;*/
+  }
+  .pitcure{
+    width: 60%;
+    height: 100%;
+    background: red;
+    margin: 0 auto;
+  }
+  .works-1 li:hover{
+    transform: scale(1.1,1.1);
+    transition: all 1s ease;
+  }
+  .ps-1 li:nth-child(1) .pitcure{
+    background: url("../images/p1.png") no-repeat center;
+    background-size: cover;
+  }
+  .ps-1 li:nth-child(2) .pitcure{
+    background: url("../images/p2.png") no-repeat center;
+    background-size: cover;
+  }
+  .ps-1 li:nth-child(3) .pitcure{
+    background: url("../images/p3.png") no-repeat center;
+    background-size: cover;
+    /*background-position: left -17px;*/
+  }
+  .ps-1 li:nth-child(4) .pitcure{
+    background: url("../images/p4.png") no-repeat center;
+    background-size: cover;
+  }
+  .ps-1 li:nth-child(5) .pitcure{
+    background: url("../images/p5.png") no-repeat center;
+    background-size: cover;
+  }
+  .ps-1 li:nth-child(6) .pitcure{
+    background: url("../images/p6.png") no-repeat center;
+    background-size: cover;
+  }
+  .wangye-1 li:nth-child(1) .pitcure{
+    background: url("../images/w1.png") no-repeat center;
+    background-size: cover;
+  }
+  .wangye-1 li:nth-child(2) .pitcure{
+    background: url("../images/w2.png") no-repeat center;
+    background-size: cover;
+  }
+  .wangye-1 li:nth-child(3) .pitcure{
+    background: url("../images/w3.png") no-repeat center;
+    background-size: cover;
+    /*background-position: left -17px;*/
+  }
+  .wangye-1 li:nth-child(4) .pitcure{
+    background: url("../images/w4.png") no-repeat center;
+    background-size: cover;
+  }
+  .wangye-1 li:nth-child(5) .pitcure{
+    background: url("../images/w5.png") no-repeat center;
+    background-size: cover;
+  }
+  .wangye-1 li:nth-child(6) .pitcure{
+    background: url("../images/w6.png") no-repeat center;
+    background-size: cover;
+  }
+  .zhengzhan-1 li:nth-child(1) .pitcure{
+    background: url("../images/z1.png") no-repeat center;
+    background-size: cover;
+  }
+  .zhengzhan-1 li:nth-child(2) .pitcure{
+    background: url("../images/z2.png") no-repeat center;
+    background-size: cover;
+  }
+  .zhengzhan-1 li:nth-child(3) .pitcure{
+    background: url("../images/z3.png") no-repeat center;
+    background-size: cover;
+    /*background-position: left -17px;*/
+  }
+  .zhengzhan-1 li:nth-child(4) .pitcure{
+    background: url("../images/z4.png") no-repeat center;
+    background-size: cover;
+  }
+  .zhengzhan-1 li:nth-child(5) .pitcure{
+    background: url("../images/z5.png") no-repeat center;
+    background-size: cover;
+  }
+  .zhengzhan-1 li:nth-child(6) .pitcure{
+    background: url("../images/z6.png") no-repeat center;
+    background-size: cover;
+  }
+  .youxi-1 li:nth-child(1) .pitcure{
+    background: url("../images/y1.png") no-repeat center;
+    background-size: cover;
+  }
+  .youxi-1 li:nth-child(2) .pitcure{
+    background: url("../images/y2.png") no-repeat center;
+    background-size: cover;
+  }
+  .youxi-1 li:nth-child(3) .pitcure{
+    background: url("../images/y3.png") no-repeat center;
+    background-size: cover;
+    /*background-position: left -17px;*/
+  }
+  .youxi-1 li:nth-child(4) .pitcure{
+    background: url("../images/y4.png") no-repeat center;
+    background-size: cover;
+  }
+  .youxi-1 li:nth-child(5) .pitcure{
+    background: url("../images/y5.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .youxi-1 li:nth-child(6) .pitcure{
+    background: url("../images/y6.png") no-repeat center;
+    background-size: cover;
+  }
+
+
+}
