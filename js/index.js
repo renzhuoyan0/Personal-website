@@ -25,6 +25,15 @@ $(function(){
             }
         },0)
     }
+    var bgImg = ["./images/bg01.jpg","./images/bg02.jpg","./images/bg03.jpg"];
+    var ii = 0;
+    var bgChange =setInterval(function(){
+        ii++;
+        if(ii==3){
+            ii=0;
+        }
+        $(".content").css({background:"url("+bgImg[ii]+") no-repeat",backgroundSize:"cover"});
+    },3000)
     var pos=[];
     //»­±³¾°¸ñ×Ó
     function drawBlock(width){
