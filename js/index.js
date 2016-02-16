@@ -203,15 +203,19 @@ $(function(){
     //})
     $('.works-1').eq(0).show();
     $(".xiala-title-1").click(function(){
-        $(".xiala-title-1").css({borderBottom:"none"});
+        $(".xiala-title-1").css({borderBottom:"none",color:"#000"});
         //$(this).css({borderBottom:"1px solid red"})
+        $(this).css("color","red");
         var index = $(this).index(".xiala-title-1");
         $('.works-1').hide();
         $('.works-1').eq(index).fadeIn(1500);
     })
+    $(".xiala-title").eq(0).css("color","red");
+    $(".xiala-title-1").eq(0).css("color","red");
     $(".xiala-title").click(function(){
-        $(".xiala-title").css({borderBottom:"none"});
+        $(".xiala-title").css({borderBottom:"none",color:"#000"});
         //$(this).css({borderBottom:"1px solid red"})
+        $(this).css("color","red");
         var index = $(this).index(".xiala-title");
         $('.works-1').hide();
         $('.works-1').eq(index).fadeIn(1500);
