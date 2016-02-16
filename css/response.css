@@ -10,7 +10,7 @@
 [text-r] {
   text-align: right;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .container {
     width: 600px;
     margin: 0 auto;
@@ -357,10 +357,10 @@
   position: relative;
   left: 100%;
 }
-@media screen and (min-width: 700px) and (max-width: 1500px) {
+@media screen and (min-width: 800px) and (max-width: 1500px) {
   .container {
     width: 600px;
-    width: 700px;
+    width: 800px;
     margin: 0 auto;
   }
   .container:before,

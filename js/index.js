@@ -79,7 +79,7 @@ $(function(){
     var mainH= $(".main").height();
     var mainW= $(".main").width();
     rain();
-    if(mainW<=700){
+    if(mainW<=800){
         drawBlock(70);
         bodyPos(".body_about",70);
         bodyPos(".body_edu",70);
@@ -101,7 +101,7 @@ $(function(){
         mainW= $(".main").width();
         $('.rain').remove();
         rain();
-        if(mainW<=700){
+        if(mainW<=800){
             pos=[];
             $(".main .row1").remove();
             drawBlock(70);
@@ -137,7 +137,7 @@ $(function(){
             $(".works-1 li").show();
             $(".pitcure").attr("style","none");
         }
-        if(mainW>700&&mainW<1000){
+        if(mainW>800&&mainW<1000){
             $('.my-experience ul li').css({fontSize:"20px"});
             $('.about-me ul li').css({fontSize:"18px"});
         }else{
