@@ -2,220 +2,378 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>个人网站</title>
-    <link rel="stylesheet" href="css/index.css"/>
-    <link rel="stylesheet" href="css/animate.css"/>
-    <link rel="stylesheet" href="css/bootstrap.css"/>
-    <link rel="stylesheet" href="css/response.css"/>
-    <link rel="stylesheet" href="css/font.css"/>
-    <script src="js/jQuery.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/response.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.js"></script>
     <script src="js/index.js"></script>
-
 </head>
 <body>
-    <div class="container-fluid main">
-        <div class="erweima"></div>
-        <div class="logo"></div>
-        <div class="body_all body_about">
-            <div class="thumb">01</div>
-            <div class="small-thumb thumb1"></div>
-            <div class="title">About me</div>
-        </div>
-        <div class="body_all body_edu">
-            <div class="thumb">02</div>
-            <div class="small-thumb thumb2"></div>
-            <div class="title">Experience</div>
-        </div>
-        <div class="body_all body_works">
-            <div class="thumb">03</div>
-            <div class="small-thumb thumb3"></div>
-            <div class="title">Works</div>
-        </div>
-        <div class="body_all body_ask">
-            <div class="thumb">04</div>
-            <div class="small-thumb thumb4"></div>
-            <div class="title">Ask me</div>
+<!--header开始-->
+<header>
+    <div class="header container-fluid header1">
+        <div class="header-jz">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-l-4" data-icon="logo"></div>
+                    <div class="col-l-8">
+                        <div class="container-fluid header-nav">
+                            <ul class="row">
+                                <li class="col-l-3 floor_xiao"><a >首页</a></li>
+                                <li class="col-l-3 floor_xiao"><a >关于我</a></li>
+                                <li class="col-l-3 floor_xiao"><a >作品展示</a></li>
+                                <li class="col-l-3 floor_xiao"><a >联系我</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="container-fluid content about-me">
-        <div class="close"></div>
-        <h1>About me</h1>
-        <div class="img">
-            <div class="myphoto"></div>
-            <h2>我是任卓彦</h2>
-            <h2>应聘前端工程师</h2>
+    <!--中header-->
+    <div class="header container-fluid header2">
+        <div class="header-jz">
+            <div class="container-fluid">
+                <div class="row">
+                    <a class="col-m-3 floor_xiao2">首页</a>
+                    <a class="col-m-3 floor_xiao2">关于我</a>
+                    <a class="col-m-3 floor_xiao2">作品展示</a>
+                    <a class="col-m-3 floor_xiao2">联系我</a>
+                </div>
+            </div>
         </div>
-        <ul>
-            <h2>基本信息</h2>
-            <li>姓名: 任卓彦</li>
-            <li>学历: 本科</li>
-            <li>出生年月: 1994/01/17</li>
-            <li>专业: 计算机科学与技术</li>
-            <li>毕业院校: 吕梁学院</li>
+    </div>
+    <!--小header-->
+    <div class="header container-fluid header3">
+        <div class="row">
+            <div class="col-s-12 menu-btn" data-icon="daohang">
+                <ul>
+                    <li class=" floor_xiao3"><a >首页</a></li>
+                    <li class=" floor_xiao3"><a >关于我</a></li>
+                    <li class=" floor_xiao3"><a >作品展示</a></li>
+                    <li class=" floor_xiao3"><a >联系我</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!--header 结束-->
+
+<!--banner开始-->
+    <div class="container-fluid banner floor">
+        <!--<ul class="banner-btn">-->
+            <!--<li></li>-->
+            <!--<li></li>-->
+        <!--</ul>-->
+        <div class="banner-con">
+            <div class="banner-box">
+                <a ></a>
+                <a ></a>
+                <a ></a>
+            </div>
+            <div class="erweima">二维码</div>
+            <div class="erwei"><img src="images/erwei.png" alt=""> </div>
+        </div>
+
+        <div style="clear:both;"></div>
+    </div>
+<!--banner结束-->
+
+<!--关于我开始-->
+<div class="container-fluid about-title floor">
+    <span class="flip">关于我<br><i>ABOUT ME</i></span>
+</div>
+<div class="container-fluid about-me">
+    <div class="row">
+        <div class="col-s-12 col-m-6 col-l-3">
+            <p>姓名:杨丹丽<br>
+            性别:女<br>年龄:24<br>学历:本科<br>专业:计算机科学与技术<br>毕业院校:吕梁学院<br>联系方式:18335833310<br>
+            邮箱:18335833310@163.com<br>座右铭:越努力,越幸运!<br>
+            </p>
+                <span class="about-span">
+                    <strong class="about-circle">
+                        ABOUT ME
+                    </strong>
+                </span>
+        </div>
+        <div class="col-s-12 col-m-6 col-l-3">
+            <p>熟练运用HTML5+CSS3，less<br>
+                精通HTML+CSS,JavaScript,jQuery语言<br>
+                熟练使用BootStrap框架,能快速搭建响应式布局<br>
+                了解后台,熟练使用PHPcms框架搭建网站<br>
+                了解Zepto.js，HBuilder，AngularJS，Touch.js技术<br>
+                了解node以及包管理工具Grunt和bower<br>
+                熟悉UI设计,熟练使用PS,AI软件<br>
+                有一定的UI美工基础<br>
+            </p>
+                <span class="about-span">
+                    <strong class="about-circle">
+                        ProfessionalSkills
+                    </strong>
+                </span>
+        </div>
+        <div class="col-s-12 col-m-6 col-l-3">
+            <p>2013.07-2013.09<br>
+                网店兼职 担任新品发布一职<br>2014.01-2015.03<br> 经营淘宝店铺<br>
+                2015.07-2016.01<br> 山西硬汉网络科技有限公司 任职前端工程师<br>
+            </p>
+                <span class="about-span">
+                    <strong class="about-circle">
+                       WORK
+                    </strong>
+                </span>
+        </div>
+        <div class="col-s-12 col-m-6 col-l-3">
+            <p>自信,阳光,责任感强,注重细节,会以最好的心态对待每一件事情,喜欢交朋友...
+                <br>会生活的人,才会享受工作;爱自己的人,才懂得怎么爱别人
+            </p>
+                <span class="about-span">
+                    <strong class="about-circle">
+                        LIFE
+                    </strong>
+                </span>
+        </div>
+    </div>
+</div>
+<!--关于我结束-->
+
+<!--产品展示开始-->
+<div class="container-fluid show floor">
+    <span class="flip">产品展示<br><i>ABOUT ME</i></span>
+    <div class="show-zj">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-l-2 col-m-2 col-s-2"></div>
+
+                <div class="col-l-2 roo col-m-2 col-s-2 cpfloor_xiao">
+                    <span  data-icon="wangzhan" icon-pos="top"><i>网站类</i></span>
+                </div>
+                <div class="col-l-2  col-m-2 col-s-2"></div>
+                <div class="col-l-2 col-m-2 col-s-2"></div>
+                <div class="col-l-2 col-m-2 col-s-2"></div>
+                <div class="col-l-2 roo col-m-2 col-s-2 cpfloor_xiao">
+                    <span  data-icon="youxi" icon-pos="top"><i>游戏类</i></span>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-l-2 col-m-2 col-s-2"></div>
+                <div class="col-l-2 col-m-2 col-s-2"></div>
+                <div class="col-l-2 roo col-m-2 col-s-2 cpfloor_xiao">
+                    <span  data-icon="pingmian" icon-pos="top"><i>平面设计</i></span>
+                </div>
+                <div class="col-l-2 roo col-m-2 col-s-2 cpfloor_xiao">
+                    <span  data-icon="ps" icon-pos="top" ><i>PS</i></span>
+                </div>
+
+                <div class="col-l-2 roo col-m-2 col-s-2 cpfloor_xiao">
+                    <span  data-icon="qita" icon-pos="top"><i>其他</i></span>
+                </div>
+
+                <div class="col-l-2 col-m-2 col-s-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-l-2 col-m-2 col-s-2"></div>
+                <div class="col-l-2 col-m-2 col-s-2"></div>
+                <div class="col-l-2 col-m-2 col-s-2"></div>
+                <div class="col-l-2 roo col-m-2 col-s-2 cpfloor_xiao">
+                    <span  data-icon="ai" icon-pos="top"><i>AI</i></span>
+                </div>
+                <div class="col-l-2 col-m-2 col-s-2"></div>
+                <div class="col-l-2 col-m-2 col-s-2"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--产品展示结束-->
+
+<!--网站类开始-->
+<div class="container-fluid cpfloor wangzhan">
+    <span class="flip"><i>网站类项目</i></span>
+    <div class="wangzhan-jz" id="sdd">
+        <ul class="wz-hang">
+            <li></li>
+            <li class="wz2">
+                <a target="_blank" href="http://yangdanli.github.io/xiaomi/">
+                    <span><p>小米</p></span>
+                </a>
+            </li>
+            <li class="wz-s wz-pg">
+                <a target="_blank" href="http://yangdanli.github.io/apple/">
+                    <span><p>苹果</p></span>
+                </a>
+            </li>
+            <li></li>
+            <li></li>
         </ul>
-        <ul>
-            <h2>职业技能</h2>
-            <li>精通HTML,CSS,javaScript前端技术</li>
-            <li>对jquery,ajax,PHP,node.js较为熟练</li>
-            <li>bootStrap响应式布局有较多的应用</li>
-            <li>掌握了angular,canvas等</li>
-            <li>对h5,css3以及移动端也有不错的认识</li>
-            <li>熟练使用PS,AI,PPT等软件</li>
+        <div style="clear:both"></div>
+        <ul class="wz-hang">
+            <li class="wz-s wz-cz"><a target="_blank" href="http://yangdanli.github.io/GitHub/"><span><p>...</p></span></a></li>
+            <li></li>
+            <li class="wz-s wz-tm"><a target="_blank" href="http://yangdanli.github.io/tianmao/"><span><p>天猫</p></span></a></li>
+            <li class="wz4"><a target="_blank" href="http://yangdanli.github.io/GitHub/"><span><p>GitHub</p></span></a></li>
+            <li class="wz-s wz-jy"><a target="_blank" href="http://junyuwang.coding.io/"><span><p>君宇网</p></span></a></li>
+        </ul>
+        <div style="clear:both"></div>
+        <ul class="wz-hang">
+            <li></li>
+            <li class="wz-s wz-xl"><a href=""><span><p>新闻APP</p></span></a></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div style="clear:both"></div>
+    </div>
+</div>
+<!--网站类结束-->
+
+<!--游戏类开始-->
+<div class="container-fluid youxi cpfloor">
+    <span class="flip"><i>游戏类项目</i></span>
+    <div class="youxi-zj">
+        <ul class="box">
+            <li><a target="_blank" href="http://yangdanli.github.io/gobang/" ><img src="images/wuziqi.png" alt=""><span class="yx-zhezhao"><p>五子棋</p></span></a></li>
+            <li><a target="_blank" href="http://yangdanli.github.io/poker/" ><img src="images/pukepai.jpg" alt=""><span class="yx-zhezhao"><p>扑克牌</p></span></a></li>
+            <li class="yx-chang"><a target="_blank" href="http://yangdanli.github.io/snake/" ><img src="images/tanchishe.jpg" alt=""><span class="yx-zhezhao"><p>贪吃蛇</p></span></a></li>
+            <li class="yx-chang"><a target="_blank" href="http://yangdanli.github.io/playgame1/" ><img src="images/dazi.jpg" alt=""><span class="yx-zhezhao"><p>打字游戏</p></span></a></li>
+            <li><a target="_blank" href="http://yangdanli.github.io/3dlunbo/" ><img src="images/3dlunbo.png" alt=""><span class="yx-zhezhao"><p>3d轮播</p></span></a></li>
+            <li><a target="_blank" href="http://yangdanli.github.io/3D/" ><img src="images/3d.png" alt=""><span class="yx-zhezhao"><p>3d盒子</p></span></a></li>
+            <li><a target="_blank" href="http://yangdanli.github.io/calculator/" ><img src="images/jisuanqi.png" alt=""><span class="yx-zhezhao"><p>计算器</p></span></a></li>
+            <li><a target="_blank" href="http://yangdanli.github.io/playgame2/" ><img src="images/daz2i.jpg" alt=""><span class="yx-zhezhao"><p>打字游戏</p></span></a></li>
+            <li><a target="_blank" href="http://yangdanli.github.io/canvas/" ><img src="images/hhh.png" alt=""><span class="yx-zhezhao"><p>画板</p></span></a></li>
+            <li class="duan"><a target="_blank" href="http://yangdanli.github.io/clock/" ><img src="images/bbb.jpg" alt=""><span class="yx-zhezhao"><p>钟表</p></span></a></li>
+            <li class="duan"><a target="_blank" href="http://yangdanli.github.io/todolist/" ><img src="images/ss.jpg" alt=""><span class="yx-zhezhao"><p>备忘录</p></span></a></li>
         </ul>
     </div>
-    <div class="container-fluid  content my-experience">
-        <div class="close"></div>
-        <h1>Experience</h1>
-        <div class="row">
-            <ul class="col-s-12 col-m-6 edu-exp">
-                <h1>教育经历</h1>
-                <span data-role="shangyiye" class="shangyiye"></span>
-                <span data-role="xiayiye" class="xiayiye"></span>
-                <li>2012.09-至今:</br>吕梁学院计算机科学与技术系软件工程专业,曾参加邮储杯并获得华北赛区三等奖</li>
-                <li>2008.09-2012.06:</br>潞城四中  在学校曾获得优秀团员称号</li>
-            </ul>
-            <ul class="col-s-12 col-m-6 work-exp work-exp1">
-                <h1>工作经历</h1>
-                <span data-role="shangyiye" class="shangyiye"></span>
-                <span data-role="xiayiye" class="xiayiye"></span>
-                <li>2015-2016年在山西哎呦科技有限公司有半年的实习经验,在此期间,曾独立完成小米,天猫等页面的页面布局以及js效果的模拟.并且写出来扑克牌,五子棋,贪吃蛇,打字游戏等游戏.并且独立完成了山西龙昊达建筑工程有限公司前端页面的设计以及后台功能的实现.然后自己做出了响应式的个人网站.通过hbuild以及后台phpcms的结合做出了新浪新闻APP</li>
-            </ul>
+</div>
+<!--游戏类结束-->
+
+<!--平面设计开始-->
+<div class="container-fluid cpfloor pingmian">
+    <span class="flip"><br><i>平面设计</i></span>
+    <div class="pm-zj">
+        <div class="pbg"></div>
+        <div class="pm-r">
+            <div class="changjing">歌词页
+                <div class="same" id="ass">闪屏页</div>
+                <div class="same" id="bss">首页</div>
+                <div class="same" id="css">播放页</div>
+            </div>
+        </div>
+
+        <div style="clear:both"></div>
+    </div>
+
+</div>
+<!--平面设计结束-->
+
+<!--PS开始-->
+<div class="container-fluid ps cpfloor ps1">
+    <span class="flip">Photo Shop<br><i>PS</i></span>
+    <div class="ps-jz">
+        <span class="psbtn psb1" data-icon="shangyibu"></span>
+        <span class="psbtn psb2" data-icon="xiayibu"> </span>
+        <div class="container-fluid psbox">
+            <div class="row lubo lubo1">
+                <div class="col-m-6 col-l-3"><img src="images/ps1.png" alt=""><span>Game</span></div>
+                <div class="col-m-6 col-l-3"><img src="images/ps2.png" alt=""><span>Services</span></div>
+                <div class=" col-m-6 col-l-3"><img src="images/ps3.png" alt=""><span>Backup</span></div>
+                <div class=" col-m-6 col-l-3"><img src="images/ps4.png" alt=""><span>Gallery</span></div>
+            </div>
+            <div class="row lubo lubo1">
+                <div class=" col-m-6 col-l-3"><img src="images/ps5.png" alt=""><span>Photos</span></div>
+                <div class="col-m-6 col-l-3"><img src="images/ps6.png" alt=""><span>Gallery</span></div>
+                <div class=" col-m-6 col-l-3"><img src="images/ps7.png" alt=""><span>Weather</span></div>
+                <div class=" col-m-6 col-l-3"><img src="images/ps8.png" alt=""><span>Flashlight</span></div>
+            </div>
+            <div class="row lubo lubo1">
+                <div class=" col-m-6 col-l-3"><img src="images/ps9.png" alt=""><span>Camera</span></div>
+                <div class="col-m-6 col-l-3"><img src="images/ps10.png" alt=""><span>Theme</span></div>
+                <div class=" col-m-6 col-l-3"><img src="images/ps11.png" alt=""><span>Maps</span></div>
+                <div class=" col-m-6 col-l-3"><img src="images/ps12.png" alt=""><span>Search</span></div>
+            </div>
+        </div>
+        <div class="niwu"></div>
+    </div>
+    <div class="ps-fangda"><div><img src="" alt=""></div></div>
+</div>
+<!--小PS-->
+<div class="container-fluid ps cpfloor ps2">
+    <span class="flip">Photo Shop<br><i>PS</i></span>
+    <div class="ps-jz">
+        <span class="psbtn psb3" data-icon="shangyibu"></span>
+        <span class="psbtn psb4" data-icon="xiayibu"> </span>
+        <div class="container-fluid psbox">
+            <div class="row lubo lubo2">
+                <div class="col-s-12 col-m-6 col-l-3"><img src="images/ps1.png" alt=""><span>whter</span></div>
+                <div class="col-s-12 col-m-6 col-l-3"><img src="images/ps2.png" alt=""><span>whter</span></div>
+            </div>
+            <div class="row lubo lubo2">
+                <div class="col-s-12  col-m-6 col-l-3"><img src="images/ps3.png" alt=""><span>whter</span></div>
+                <div class="col-s-12 col-m-6 col-l-3"><img src="images/ps4.png" alt=""><span>whter</span></div>
+            </div>
+            <div class="row lubo lubo2">
+                <div class="col-s-12  col-m-6 col-l-3"><img src="images/ps5.png" alt=""><span>whter</span></div>
+                <div class="col-s-12 col-m-6 col-l-3"><img src="images/ps6.png" alt=""><span>whter</span></div>
+            </div>
+            <div class="row lubo lubo2">
+                <div class="col-s-12  col-m-6 col-l-3"><img src="images/ps5.png" alt=""><span>whter</span></div>
+                <div class="col-s-12 col-m-6 col-l-3"><img src="images/ps6.png" alt=""><span>whter</span></div>
+            </div>
+            <div class="row lubo lubo2">
+                <div class="col-s-12 col-m-6 col-l-3"><img src="images/ps9.png" alt=""><span>whter</span></div>
+                <div class="col-s-12 col-m-6 col-l-3"><img src="images/ps10.png" alt=""><span>whter</span></div>
+            </div>
+            <div class="row lubo lubo2">
+                <div class="col-s-12 col-m-6 col-l-3"><img src="images/ps11.png" alt=""><span>whter</span></div>
+                <div class="col-s-12 col-m-6 col-l-3"><img src="images/ps12.png" alt=""><span>whter</span></div>
+            </div>
+        </div>
+        <div class="niwu"></div>
+    </div>
+    <div class="ps-fangda"><div><img src="" alt=""></div></div>
+</div>
+<!--PS结束-->
+
+<!--AI开始-->
+<div class="container-fluid ai cpfloor">
+    <span class="flip">Adobe lllustrator<br><i>AI</i></span>
+    <div class="ai-zj">
+        <div class="container-fluid ai-box">
+            <div class="row">
+                <div class="col-l-3 col-m-6 col-s-6"><img src=images/ai1.png alt=""><span>麦克风</span></div>
+                <div class="col-l-3 col-m-6 col-s-6"><img src=images/ai2.png alt=""><span>LowPoly</span></div>
+                <div class="col-l-3 col-m-6 col-s-6"><img src=images/ai3.png alt=""><span>漫画</span></div>
+                <div class="col-l-3 col-m-6 col-s-6"><img src=images/ai4.png alt=""><span>字体设计</span></div>
+            </div>
+        </div>
+        <div style="clear: both"></div>
+        <div class="ai-zhezhao">
+            <div class="zhong"><img src="" alt=""></div>
         </div>
     </div>
-    <div class="container-fluid  content my-works">
-        <div class="close"></div>
-        <h1>My works</h1>
-        <div class="row">
-            <div class="col-s-3 col-m-h xiala" >
-                <div data-role="xiala" class="xiala-control"></div>
-                <div class="xiala-title">h5,css3</div>
-                <div class="xiala-title">网页设计</div>
-                <div class="xiala-title">网站建设</div>
-                <div class="xiala-title">游戏展示</div>
-            </div>
-            <div class="col-s-h col-m-3 xiala-title-1">h5,css3</div>
-            <div class="col-s-h col-m-3 xiala-title-1">网页设计</div>
-            <div class="col-s-h col-m-3 xiala-title-1">网站建设</div>
-            <div class="col-s-h col-m-3 xiala-title-1">游戏展示</div>
-        </div>
-        <div class="show-works container-fluid">
-            <div class="row show-row show-row1">
-                <div class="col-s-12 col-m-12 works-1 ps-1">
-                    <span data-role="shangyiye" class="show_up"></span>
-                    <span data-role="xiayiye" class="show_down"></span>
-                    <ul>
-                        <li class="ps">
-                            <a href="http://renzhuoyan0.github.io/htmlcanvas"><div class="pitcure"></div></a>
-                        </li>
-                        <li class="ps">
-                            <a href="http://renzhuoyan0.github.io/html5"><div class="pitcure"></div></a>
-                        </li>
-                        <li class="ps">
-                            <a href="http://renzhuoyan0.github.io/3droute"><div class="pitcure"></div></a>
-                        </li>
-                        <li class="ps">
-                            <a href="http://renzhuoyan0.github.io/3ddh"><div class="pitcure"></div></a>
-                        </li>
-                        <li class="ps">
-                            <a href="http://renzhuoyan0.github.io/Typing-game-2"><div class="pitcure"></div></a>
-                        </li>
-                        <li class="ps">
-                            <a href="http://renzhuoyan0.github.io/Typing-game-1"><div class="pitcure"></div></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-s-12 col-m-12 works-1 wangye-1">
-                    <span data-role="shangyiye" class="show_up"></span>
-                    <span data-role="xiayiye" class="show_down"></span>
-                    <ul>
-                        <li class="ps">
-                            <div class="pitcure"></div>
-                        </li>
-                        <li class="ps">
-                            <div class="pitcure"></div>
-                        </li>
-                        <li class="ps">
-                            <div class="pitcure"></div>
-                        </li>
-                        <li class="ps">
-                            <div class="pitcure"></div>
-                        </li>
-                        <li class="ps">
-                            <div class="pitcure"></div>
-                        </li>
-                        <li class="ps">
-                            <div class="pitcure"></div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-s-12 col-m-12 works-1 zhengzhan-1">
-                    <span data-role="shangyiye" class="show_up"></span>
-                    <span data-role="xiayiye" class="show_down"></span>
-                    <ul>
-                        <li class="ps">
-                            <a href="http://renzhuoyan0.github.io/Tmall"><div class="pitcure"></div></a>
-                        </li>
-                        <li class="ps">
-                            <a href="http://renzhuoyan0.github.io/apple"><div class="pitcure"></div></a>
-                        </li>
-                        <li class="ps">
-                            <a href="http://renzhuoyan0.github.io/github"><div class="pitcure"></div></a>
-                        </li>
-                        <li class="ps">
-                            <a href="http://renzhuoyan0.github.io/xiaomi"><div class="pitcure"></div></a>
-                        </li>
-                        <li class="ps">
-                            <a href="http://renzhuoyan1.duapp.com/"><div class="pitcure"></div></a>
-                        </li>
-                        <li class="ps">
-                            <a href="http://renzhuoyan1.duapp.com/"><div class="pitcure"></div></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-s-12 col-m-12 works-1 youxi-1">
-                    <span data-role="shangyiye" class="show_up"></span>
-                    <span data-role="xiayiye" class="show_down"></span>
-                    <ul>
-                        <li class="ps">
-                            <a href="http://renzhuoyan0.github.io/poker-1"><div class="pitcure"></div></a>
-                        </li>
-                        <li class="ps">
-                            <a href="http://renzhuoyan0.github.io/fiveC"><div class="pitcure"></div></a>
-                        </li>
-                        <li class="ps">
-                            <a href="http://renzhuoyan0.github.io/Calculator"><div class="pitcure"></div></a>
-                        </li>
-                        <li class="ps">
-                            <a href="http://renzhuoyan0.github.io/Typing-game-1"><div class="pitcure"></div></a>
-                        </li>
-                        <li class="ps">
-                            <a href="http://renzhuoyan0.github.io/snake_name"><div class="pitcure"></div></a>
-                        </li>
-                        <li class="ps">
-                            <a href="http://renzhuoyan0.github.io/Typing-game-2"><div class="pitcure"></div></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid content ask-me">
-        <div class="close"></div>
-        <h1>Ask me</h1>
-        <div class="row">
-            <div data-role="address" icon-pos="top" class="col-s-6 col-m-3">
-               <span>山西省太原市小店区凯通大厦</span>
-            </div>
-            <div data-role="phone" icon-pos="top"  class="col-s-6 col-m-3">
-                <span>18234836740</span>
-            </div>
-            <div data-role="qq" icon-pos="top"  class="col-s-6 col-m-3">
-                <span>1025042167</span>
-            </div>
-            <div data-role="youxiang" icon-pos="top"  class="col-s-6 col-m-3">
-                <span>18234836740@163.com</span>
-            </div>
-        </div>
-    </div>
+</div>
+<!--AI结束-->
+
+<!--联系我开始-->
+<div class="container-fluid contact floor" >
+    <span class="flip">联系我<br><i>CONTACT ME</i></span>
+    <ul class="row">
+        <li class="col-s-12 col-m-6 col-l-3" data-icon="dianhua" >18335833310</li>
+        <li class="col-s-12 col-m-6 col-l-3" data-icon="youxiang" >18335833310@163.com</li>
+        <li class="col-s-12 col-m-6 col-l-3" data-icon="koukou">593857246</li>
+        <li class="col-s-12 col-m-6 col-l-3" data-icon="weixin" >ydl1314your</li>
+    </ul>
+</div>
+<!--联系我结束-->
+<!--footer  开始-->
+<div class="container-fluid footer">
+    <span>版权归个人所有</span>
+</div>
+<!--footer 结束-->
+
+<!--置顶按钮-->
+<div id="top_btn"></div>
 </body>
 </html>

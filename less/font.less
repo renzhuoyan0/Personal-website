@@ -1,62 +1,96 @@
 @font-face {
-  font-family: "iconfont";
+  font-family:"demo";
   src: url('../font/iconfont.eot'); /* IE9*/
   src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../font/iconfont.woff') format('woff'), /* chrome��firefox */
-  url('../font/iconfont.ttf') format('truetype'), /* chrome��firefox��opera��Safari, Android, iOS 4.2+*/
+  url('../font/iconfont.woff') format('woff'), /* chrome、firefox */
+  url('../font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
   url('../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
 }
-@name1:'shangyiye';
-@name2:'xiayiye';
-@name3:'xiala';
-@name4:'shouqi';
-@name5:'address';
-@name6:'phone';
-@name7:'qq';
-@name8:'youxiang';
 
-@con1:e743;
-@con2:e747;
-@con3:e66a;
-@con4:e610;
-@con5:e631;
-@con6:e645;
-@con7:e610;
-@con8:e637;
-.for(@i:1) when (@i<=8){
-  @n:'name@{i}';
-  @n1:@@n;
-  @c:'con@{i}';
-  @c1:@@c;
-  *[data-role=@{n1}]:before{
-    content:"\@{c1}" ;
-    font-family: "iconfont";
+@name1:lianxi;
+@name2:dianhua;
+@name3:aboutme;
+@name4:weixin;
+@name5:zuopingzhanshi;
+@name6:shouye;
+@name7:ps;
+@name8:logo;
+@name9:koukou;
+@name10:ai;
+@name11:adress;
+@name12:pingmian;
+@name13:close;
+@name14:wangzhan;
+@name15:ps;
+@name16:qita;
+@name17:qita2;
+@name18:daohang;
+@name19:youxiang;
+@name20:youxi;
+@name21:ai2;
+@name22:shangyibu;
+@name23:xiayibu;
+
+@con1:e600;
+@con2:e601;
+@con3:e602;
+@con4:e603;
+@con5:e604;
+@con6:e605;
+@con7:e606;
+@con8:e607;
+@con9:e608;
+@con10:e609;
+@con11:e60a;
+@con12:e60b;
+@con13:e613;
+@con14:e60c;
+@con15:e60d;
+@con16:e60e;
+@con17:e60f;
+@con18:e614;
+@con19:e610;
+@con20:e611;
+@con21:e612;
+@con22:e615;
+@con23:e616;
+
+.for (@i:1) when (@i<=23){
+  @n:"name@{i}";  //name1  name2
+  @n1:@@n;       //yifu  tx  diannao
+  @c:"con@{i}";  //con1  con2  con3
+  @c1:@@c;       //e635  e605
+
+  //图标在左边,文字在右边
+  *[data-icon=@{n1}]:before{
+    font-family: demo;
+    content:"\@{c1}";
   }
-  *[data-role=@{n1}][icon-pos="top"]:before{
-    display: block;
-    content:"\@{c1}" ;
-    font-family: "iconfont";
+  //图标在上边,文字在下边
+  *[data-icon=@{n1}][icon-pos=top]:before{
+    display:block;
+    font-family: demo;
+    content:"\@{c1}";
   }
-  *[data-role=@{n1}][icon-pos="right"]:after{
-    content:"\@{c1}" ;
-    font-family: "iconfont";
+  //图标在右边,文字在左边
+  *[data-icon=@{n1}][icon-pos=right]:before{
+    font-family: demo;
+    content:"";
   }
-  *[data-role=@{n1}][icon-pos="right"]:before{
-    content:"" ;
-    font-family: "iconfont";
+  *[data-icon=@{n1}][icon-pos=right]:after{
+    font-family: demo;
+    content:"\@{c1}";
   }
-  *[data-role=@{n1}][icon-pos="bottom"]:after{
-    display: block;
-    content:"\@{c1}" ;
-    font-family: "iconfont";
+  //图标在下边,文字在上边
+  *[data-icon=@{n1}][icon-pos=bottom]:before{
+    font-family: demo;
+    content:"";
   }
-  *[data-role=@{n1}][icon-pos="bottom"]:before{
-    content:"" ;
-    font-family: "iconfont";
+  *[data-icon=@{n1}][icon-pos=bottom]:after{
+    display:block;
+    font-family: demo;
+    content:"\@{c1}";
   }
   .for(@i+1);
 }
 .for();
-*[icon-pos="right"]{
-
-}

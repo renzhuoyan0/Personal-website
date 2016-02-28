@@ -1,46 +1,43 @@
-//hide show
-@-webkit-keyframes hide {
-  0%{
-    -webkit-transform: scale(1,1);
-    opacity: 1;
-  }
+//show  hide
+@keyframes show {
   100%{
-    -webkit-transform: scale(0,0);
-    opacity: 0;
-  }
-}
-*[data-role=animate-hide]{
-  -webkit-animation: hide 1s ease forwards;
-  -webkit-transform-origin:left top;
-}
-@-webkit-keyframes show {
-  100%{
-    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
     opacity: 1;
   }
   0%{
-    -webkit-transform: scale(0,0);
+    transform: scale(0,0);
     opacity: 0;
   }
 }
-*[data-role=animate-show]{
-  -webkit-animation: show 1s ease forwards;
-  -webkit-transform-origin:left top;
+@keyframes hide {
+  0%{
+    transform: scale(1,1);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(0,0);
+    opacity: 0;
+  }
+}
+*[data-role="animate-hide"]{
+  animation: hide 1s ease forwards;
+  transform-origin: left top;
+}
+*[data-role="animate-show"]{
+  animation: show 1s ease forwards;
+  transform-origin: left top;
 }
 
-//fidein fideout
-@-webkit-keyframes fidein {
-  0%{
-    opacity: 0;
-  }
+//fadein  fadeout
+@keyframes fadein {
   100%{
     opacity: 1;
   }
+  0%{
+    opacity: 0;
+  }
 }
-*[data-role=animate-fidein]{
-  -webkit-animation: fidein 1s ease forwards;
-}
-@-webkit-keyframes findeout {
+@keyframes fadeout {
   0%{
     opacity: 1;
   }
@@ -48,103 +45,101 @@
     opacity: 0;
   }
 }
-*[data-role=animate-fideout]{
-  -webkit-animation: fideout 1s ease forwards;
+*[data-role="animate-fadein"]{
+  animation: fadein 1s ease forwards;
+  transform-origin: left top;
 }
-//slideup slidedown
-@-webkit-keyframes slideup {
-  0%{
-    -webkit-transform: scale(1,0);
-  }
-  100%{
-    -webkit-transform: scale(0,1);
-  }
-}
-*[data-role=animate-slideup]{
-  -webkit-animation: slideup 1s ease forwards;
-  -webkit-transform-origin:top;
-}
-@-webkit-keyframes slidedown {
-  0%{
-    -webkit-transform: scale(1,1);
-  }
-  100%{
-    -webkit-transform: scale(0,0);
-  }
-}
-*[data-role=animate-slidedown]{
-  -webkit-animation: slidedown 1s ease forwards;
-  -webkit-transform-origin:top;
+*[data-role="animate-fadeout"]{
+  animation: fadeout 1s ease forwards;
+  transform-origin: left top;
 }
 
-//‘≤÷‹‘À∂Ø
+//down  uo
+
+@keyframes down {
+  100%{
+    transform:scale(1,1)
+  }
+  0%{
+    transform:scale(1,0)
+  }
+}
+@keyframes up {
+  0%{
+    transform:scale(1,1)
+  }
+  100%{
+    transform:scale(1,0)
+  }
+}
+*[data-role="animate-down"]{
+  animation: down 1s ease forwards;
+  transform-origin:top;
+}
+*[data-role="animate-up"]{
+  animation: up 1s ease forwards;
+  transform-origin:top;
+}
+
+
+//ÂúÜÂë®ËøêÂä®
 @r:30;
 @a:0;
 @p:10;
 @num:360/@p;
-.round(@i:0)when(@i<=@num){
+.round(@i:0) when (@i<=@num){
   @select:100/@num*@i*1%;
-  @a:@i*@p;
+  @a:@p*@i;
   @{select}{
-    -webkit-transform: translate(cos(@a*pi()/180)*@r*1px,sin(@a*pi()/180)*@r*1px);
+    transform: translate(cos(@a*pi()/180)*@r*1px,sin(@a*pi()/180)*@r*1px);
   }
   .round(@i+1);
 }
-@-webkit-keyframes round {
+@keyframes round {
   .round();
 }
-*[data-a=animate-round]{
-  -webkit-animation: round 1s linear infinite;
+*[data-role="animate-round"]{
+  animation: round 2s linear infinite;
 }
 
-// ≤®¿Àœﬂ
+
+//Êõ≤Á∫øËøêÂä®
 @r:30;
+@r1:10;
 @a:0;
 @a1:0;
-@p:4;
-@p1:30;
+@p:3;
+@p1:20;
 @num:360/@p;
-.bolang(@i:0)when(@i<=@num){
+.round1 (@i:0) when (@i<=@num){
   @select:100/@num*@i*1%;
-  @a:@i*@p;
-  @a1:@i*@p1;
+  @a:@p*@i;
+  @a1:@p1*@i;
   @{select}{
-    -webkit-transform: translate(
-              cos(@a*pi()/180)*@r*1px,
-              sin(@a1*pi()/180)*@p1*1px);
+    transform: translate(cos(@a*pi()/180)*@r*1px,sin(@a1*pi()/180)*@r1*1px);
   }
-  .bolang(@i+1);
+  .round1(@i+1);
 }
-@-webkit-keyframes bolang {
-  .bolang();
+@keyframes quxian {
+  .round1();
 }
-*[data-a=animate-bolang]{
-  -webkit-animation: bolang 5s linear infinite;
-}
-
-
-//‘≤
-
-@-webkit-keyframes yuan {
-  0%{transform:rotate(0deg)}
-  50%{transform:rotate(180deg)}
-  100%{transform:rotate(360deg)}
-}
-*[data-a=animate-yuan]{
-  -webkit-animation: yuan 2s linear infinite;
+*[data-role="animate-quxian"]{
+  animation: quxian 2s linear;
 }
 
 
-//ª≠‘≤
-@num:10;
-@r:10;
-@d:50;
-.drawCircle(@i:1) when (@i<=@num){
-  .circle@{i}{
-    width: @r*2px;
-    height: @r*2px;
-    transform:transition(cos(360/@r*@i*PI()/180)*@d*1px,sin(360/@r*@i*PI()/180)*@d*1px);
+//ÊóãËΩ¨
+
+@keyframes xuanzhuan {
+  0%{
+    transform: (0deg);
   }
-  .drawCircle(@i+1);
+  100%{
+    transform: rotateZ(360deg);
+  }
 }
-.drawCircle();
+*[data-role="animate-xuanzhuan"]{
+  animation: xuanzhuan 1s ease infinite;
+  animation-timing-function: linear;
+  transform-origin: center;
+}

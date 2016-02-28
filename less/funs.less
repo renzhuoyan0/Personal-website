@@ -1,0 +1,22 @@
+.radius(@a1:50%,@a2:50%,@a3:50%,@a4:50%){
+  //border-radius:@a1 @a2 @a3 @a4; //
+  -webkit-border-radius:@arguments;
+  -moz-border-radius:@arguments;
+  -o-border-radius:@arguments;   //解决兼容性问题
+  -ms-border-radius:@arguments;
+  border-radius:@arguments;      //使用arguments就是使用所有的参数,不用一个一个写
+}
+.box-shadow(@inset:true,@x:0px,@y:0px,@px:15px,@c:#000) when(@inset=true){
+  -webkit-box-shadow:@x @y @px @c inset;
+  -moz-box-shadow:@x @y @px @c inset;
+  -o-box-shadow:@x @y @px @c inset;
+  -ms-box-shadow:@x @y @px @c inset;
+  box-shadow:@x @y @px @c inset;
+}
+.box-shadow(@inset:false,@x:0px,@y:0px,@px:15px,@c:#000) when(@inset=false){
+  -webkit-box-shadow:@x @y @px @c;
+  -moz-box-shadow:@x @y @px @c;
+  -o-box-shadow:@x @y @px @c;
+  -ms-box-shadow:@x @y @px @c;
+  box-shadow:@x @y @px @c;
+}
