@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+</head>
+<style>
+    ul,li,body{
+        padding:0;margin:0;
+    }
+    li{
+        list-style: none;
+    }
+    .youxi{
+        background: #0A0A0C url(../images/bg2.png);padding:20px 0 30px;
+    }
+    .youxi .flip{
+        margin-bottom: 20px;
+    }
+    .youxi-zj{
+        width:500px;height:500px;border:1px solid green;position: relative;margin:0 auto;
+    }
+    .box{
+        width:800px;
+        height:800px;
+        position: absolute;
+        border:1px solid red;
+    }
+
+    .box li{
+        position: relative;
+        width:20%;float:left;height:24%;border:1px solid green;margin:10px 20px 13px;
+    }
+    .box li img{
+        width:100%;height:100%;
+    }
+
+    .box li a{
+        color:white;
+    }
+    .box li:nth-child(1){
+        width:40%;
+    }
+    .box li:nth-child(2){
+        height:30%;
+    }
+    .box li:nth-child(8){
+        width:40%;
+    }
+    .box li:nth-child(5){
+        float:left;height:30%;
+    }
+    .box .yx-chang{
+        height:25.33333%;float:right;
+    }
+    @media screen and (min-width: 700px){
+        .youxi-zj{
+            width:640px;height:600px;
+        }
+    }
+    @media screen and (min-width: 1000px){
+        .youxi-zj{
+            width:1024px;height:800px;
+        }
+    }
+    .yx-zhezhao{
+        width:100%;height:100%;position:absolute;top:0;left:0;
+        background: rgba(0,0,0,.7);display:none;
+    }
+    .yx-zhezhao p{
+        width:60%;height:40%;display: block;border:2px solid #00ff00;position:absolute;top:0;left:0;bottom:0;right:0;margin:auto;
+        text-align: center;line-height: 40px;;
+    }
+</style>
+<script>
+    $(function(){
+        $(".box li").hover(function(){
+            $(this).find($(".yx-zhezhao")).css({display:"block"})
+        },function(){
+            $(this).find($(".yx-zhezhao")).css({display:"none"})
+        })
+    })
+
+</script>
+<body>
+<div class="container-fluid youxi cpfloor">
+    <span class="flip"><i>游戏类项目</i></span>
+    <div class="youxi-zj">
+        <ul class="box">
+            <li><a href="" ><img src="images/wuziqi.jpg" alt=""><span class="yx-zhezhao"><p>游戏游戏</p></span></a></li>
+            <li><a href="" ><img src="images/pukepai.jpg" alt=""><span class="yx-zhezhao"><p>游戏游戏</p></span></a></li>
+            <li class="yx-chang"><a href="" ><img src="images/tanchishe.jpg" alt=""><span class="yx-zhezhao"><p>游戏游戏</p></span></a></li>
+            <li class="yx-chang"><a href="" ><img src="images/jisuanqi.jpg" alt=""><span class="yx-zhezhao"><p>游戏游戏</p></span></a></li>
+            <li><a href="" ><img src="images/daziyouxi.jpg" alt=""><span class="yx-zhezhao"><p>游戏游戏</p></span></a></li>
+            <li><a href="" ><img src="images/yinyue.jpg" alt=""><span class="yx-zhezhao"><p>游戏游戏</p></span></a></li>
+            <li><a href="" ><img src="images/rili.jpg" alt=""><span class="yx-zhezhao"><p>游戏游戏</p></span></a></li>
+            <li><a href="" ><img src="images/daziyouxi.jpg" alt=""><span class="yx-zhezhao"><p>游戏游戏</p></span></a></li>
+            <li><a href="" ><img src="images/daziyouxi.jpg" alt=""><span class="yx-zhezhao"><p>游戏游戏</p></span></a></li>
+            <li><a href="" ><img src="images/daziyouxi.jpg" alt=""><span class="yx-zhezhao"><p>游戏游戏</p></span></a></li>
+            <li><a href="" ><img src="images/daziyouxi.jpg" alt=""><span class="yx-zhezhao"><p>游戏游戏</p></span></a></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
